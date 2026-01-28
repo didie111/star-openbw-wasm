@@ -1,0 +1,9 @@
+_excluded_backup/
+*.mpq
+*.dll
+*.exe
+*.wasm
+*.data
+**/build/
+**/CMakeFiles/
+**/*.log
