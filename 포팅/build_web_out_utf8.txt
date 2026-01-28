@@ -1,0 +1,738 @@
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:835:66) (const bwgame::unit_id_t<unsigned short> &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<std::__wrap_iter<const bwgame::unit_id_t<unsigned short> *>, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:835:66)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<std::__wrap_iter<const bwgame::unit_id_t<unsigned short> *>, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:835:66)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:835:28: note: in instantiation of function template specialization 'bwgame::make_transform_range<const std::array<bwgame::unit_id_t<unsigned short>, 8> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:835:66)>' requested here
+  835 |                 return make_filter_range(make_transform_range(u->loaded_units, [this](auto uid) {
+      |                                          ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:835:66) (const bwgame::unit_id_t<unsigned short> &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::image_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:976:21: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f> &>' requested here
+  976 |                 for (image_t* i : ptr(sprite->images)) {
+      |                                   ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::image_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:2175:39: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link> &>' requested here
+ 2175 |                         for (unit_t* queued_unit : reverse(ptr(resource->building.resource.gather_queue))) {
+      |                                                            ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:2502:26: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f> &>' requested here
+ 2502 |                 for (const unit_t* u : ptr(st.psionic_matrix_units)) {
+      |                                        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:2902:20: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f> &>' requested here
+ 2902 |                 for (unit_t* n : ptr(st.visible_units)) {
+      |                                  ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:3192:21: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link> &>' requested here
+ 3192 |                         for (unit_t* n : ptr(st.player_units[u->owner])) {
+      |                                          ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:3208:21: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link> &>' requested here
+ 3208 |                         for (unit_t* n : ptr(u->carrier.inside_units)) {
+      |                                          ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::bullet_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:7199:24: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f> &>' requested here
+ 7199 |                                 for (bullet_t* n : ptr(st.active_bullets)) {
+      |                                                    ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::bullet_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::order_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:16826:21: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f> &>' requested here
+ 16826 |                 for (order_t* o : ptr(u->order_queue)) {
+       |                                   ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::order_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19590:11: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'bwgame::unit_t' [-Wnontrivial-memcall]
+ 19590 |                         memcpy(u, v, sizeof(*v));
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19590:11: note: explicitly cast the pointer to silence this warning
+ 19590 |                         memcpy(u, v, sizeof(*v));
+       |                                ^
+       |                                (void*)
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19646:11: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'bwgame::bullet_t' [-Wnontrivial-memcall]
+ 19646 |                         memcpy(rv, v, sizeof(*v));
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19646:11: note: explicitly cast the pointer to silence this warning
+ 19646 |                         memcpy(rv, v, sizeof(*v));
+       |                                ^
+       |                                (void*)
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19661:11: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'bwgame::sprite_t' [-Wnontrivial-memcall]
+ 19661 |                         memcpy(rv, v, sizeof(*v));
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19661:11: note: explicitly cast the pointer to silence this warning
+ 19661 |                         memcpy(rv, v, sizeof(*v));
+       |                                ^
+       |                                (void*)
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::regions_t::region &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<std::__wrap_iter<bwgame::regions_t::region *>, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<std::__wrap_iter<bwgame::regions_t::region *>, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<std::vector<bwgame::regions_t::region> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:20360:20: note: in instantiation of function template specialization 'bwgame::ptr<std::vector<bwgame::regions_t::region> &>' requested here
+ 20360 |                                 for (auto* r : ptr(game_st.regions.regions)) {
+       |                                                ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::regions_t::region &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\actions.h:69:97) (bwgame::unit_id_t<unsigned short> &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::static_vector<bwgame::unit_id_t<unsigned short>, 24>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\actions.h:69:97)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::static_vector<bwgame::unit_id_t<unsigned short>, 24>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\actions.h:69:97)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\actions.h:69:28: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::static_vector<bwgame::unit_id_t<unsigned short>, 24> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\actions.h:69:97)>' requested here
+   69 |                 return make_filter_range(make_transform_range(action_st.control_groups.at(owner).at(group_n), [this](unit_id u) {
+      |                                          ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\actions.h:69:97) (bwgame::unit_id_t<unsigned short> &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:511:92: warning: 'is_literal_type<unsigned long long>' is deprecated [-Wdeprecated-declarations]
+  511 | using is_native_fast_int = std::integral_constant<bool, std::is_integral<T>::value && std::is_literal_type<T>::value && sizeof(T) <= sizeof(void*)>;
+      |                                                                                            ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\ui_custom.h:750:36: note: in instantiation of template type alias 'is_native_fast_int' requested here
+  750 |         using bitmap_t = std::conditional<is_native_fast_int<uint64_t>::value, uint64_t, uint32_t>::type;
+      |                                           ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/is_literal_type.h:23:29: note: 'is_literal_type<unsigned long long>' has been explicitly marked deprecated here
+   23 | struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS is_literal_type
+      |                             ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::image_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\ui_custom.h:1185:31: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f> &>' requested here
+ 1185 |                 for (const image_t* image : ptr(sprite->images)) {
+      |                                             ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::image_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::image_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<std::reverse_iterator<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f>::const_iterator>, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<std::reverse_iterator<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f>::const_iterator>, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::iterators_range<std::reverse_iterator<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f>::const_iterator>> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\ui_custom.h:2027:22: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::iterators_range<std::reverse_iterator<bwgame::intrusive_list<bwgame::image_t, bwgame::default_link_f>::const_iterator>>>' requested here
+ 2027 |                 for (auto* image : ptr(reverse(sprite->images))) {
+      |                                    ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::image_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::sprite_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f>::iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\ui_custom.h:2068:24: note: in instantiation of function template specialization 'bwgame::ptr<bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f> &>' requested here
+ 2068 |                         for (auto* sprite : ptr(st.sprites_on_tile_line.at(y))) {
+      |                                             ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (bwgame::sprite_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:511:92: warning: 'is_literal_type<unsigned long long>' is deprecated [-Wdeprecated-declarations]
+  511 | using is_native_fast_int = std::integral_constant<bool, std::is_integral<T>::value && std::is_literal_type<T>::value && sizeof(T) <= sizeof(void*)>;
+      |                                                                                            ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:688:8: note: in instantiation of template type alias 'is_native_fast_int' requested here
+  688 |                 if (!is_native_fast_int<tmp_t>::value && a.raw_value <= max_value_no_overflow && b.raw_value <= max_value_no_overflow) {
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:13425:18: note: in instantiation of member function 'bwgame::fixed_point<24, 8, false>::multiply_divide' requested here
+ 13425 |                         return (ufp8::multiply_divide(speed, speed, u->flingy_acceleration.as_unsigned()) / 2u).as_signed();
+       |                                       ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/is_literal_type.h:23:29: note: 'is_literal_type<unsigned long long>' has been explicitly marked deprecated here
+   23 | struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS is_literal_type
+      |                             ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::order_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19595:4: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::order_t, bwgame::default_link_f>, bwgame::order_t *(bwgame::state_copier::*)(const bwgame::order_t *)>' requested here
+ 19595 |                         assemble(u->order_queue, v->order_queue, &state_copier::order);
+       |                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::order_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19604:6: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::fighter_link>, bwgame::unit_t *(bwgame::state_copier::*)(const bwgame::unit_t *)>' requested here
+ 19604 |                                         assemble(u->carrier.inside_units, v->carrier.inside_units, &state_copier::unit);
+       |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19620:6: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::unit_t, bwgame::unit_t::worker_gather_link>, bwgame::unit_t *(bwgame::state_copier::*)(const bwgame::unit_t *)>' requested here
+ 19620 |                                         assemble(u->building.resource.gather_queue, v->building.resource.gather_queue, &state_copier::unit);
+       |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::thingy_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::thingy_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::thingy_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::thingy_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::thingy_t, bwgame::default_link_f> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19734:3: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::thingy_t, bwgame::default_link_f>, bwgame::thingy_t *(bwgame::state_copier::*)(const bwgame::thingy_t *)>' requested here
+ 19734 |                 assemble(r.free_thingies, st.free_thingies, &state_copier::thingy);
+       |                 ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::thingy_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::path_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::path_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::path_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::path_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::path_t, bwgame::default_link_f> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19737:3: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::path_t, bwgame::default_link_f>, bwgame::path_t *(bwgame::state_copier::*)(const bwgame::path_t *)>' requested here
+ 19737 |                 assemble(r.free_paths, st.free_paths, &state_copier::path);
+       |                 ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::path_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::sprite_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19743:3: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::sprite_t, bwgame::default_link_f>, bwgame::sprite_t *(bwgame::state_copier::*)(const bwgame::sprite_t *)>' requested here
+ 19743 |                 assemble(r.sprites_container.free_list, st.sprites_container.free_list, &state_copier::sprite);
+       |                 ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::sprite_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::bullet_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19749:3: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::bullet_t, bwgame::default_link_f>, bwgame::bullet_t *(bwgame::state_copier::*)(const bwgame::bullet_t *)>' requested here
+ 19749 |                 assemble(r.bullets_container.free_list, st.bullets_container.free_list, &state_copier::bullet);
+       |                 ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::bullet_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::cloaked_unit_link>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::cloaked_unit_link>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::cloaked_unit_link> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::cloaked_unit_link> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19752:3: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::cloaked_unit_link>, bwgame::unit_t *(bwgame::state_copier::*)(const bwgame::unit_t *)>' requested here
+ 19752 |                 assemble(r.cloaked_units, st.cloaked_units, &state_copier::unit);
+       |                 ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19753:3: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::unit_t, bwgame::psionic_matrix_link_f>, bwgame::unit_t *(bwgame::state_copier::*)(const bwgame::unit_t *)>' requested here
+ 19753 |                 assemble(r.psionic_matrix_units, st.psionic_matrix_units, &state_copier::unit);
+       |                 ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19755:4: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::unit_t, void, &bwgame::unit_t::player_units_link>, bwgame::unit_t *(bwgame::state_copier::*)(const bwgame::unit_t *)>' requested here
+ 19755 |                         assemble(r.player_units[i], st.player_units[i], &state_copier::unit);
+       |                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\GAME_I~1\PLAYER~1.CPP:3:
+In file included from C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:4:
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:169:34: warning: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' is deprecated [-Wdeprecated-declarations]
+  169 |         using reference = typename std::result_of<transform_F(typename std::iterator_traits<iterator_T>::reference)>::type;
+      |                                         ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:242:9: note: in instantiation of template class 'bwgame::transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  242 |         return transform_iterator<iterator_T, transform_F>(std::forward<iterator_T>(c), std::forward<transform_F>(f));
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:247:15: note: in instantiation of function template specialization 'bwgame::make_transform_iterator<bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f>::const_iterator, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  247 |         auto begin = make_transform_iterator(r.begin(), std::forward<transform_F>(f));
+      |                      ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:9: note: in instantiation of function template specialization 'bwgame::make_transform_range<const bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f> &, (lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33)>' requested here
+  317 |         return make_transform_range(r, [](auto& ref) {
+      |                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19725:18: note: in instantiation of function template specialization 'bwgame::ptr<const bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f> &>' requested here
+ 19725 |                 for (auto* v : ptr(src_list)) {
+       |                                ^
+C:\Users\82103\DOWNLO~1\TEST2~3.396\bwgame.h:19757:3: note: in instantiation of function template specialization 'bwgame::state_copier::assemble<bwgame::intrusive_list<bwgame::unit_t, bwgame::default_link_f>, bwgame::unit_t *(bwgame::state_copier::*)(const bwgame::unit_t *)>' requested here
+ 19757 |                 assemble(r.units_container.free_list, st.units_container.free_list, &state_copier::unit);
+       |                 ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__type_traits/result_of.h:25:8: note: 'result_of<(lambda at C:\Users\82103\DOWNLO~1\TEST2~3.396\util.h:317:33) (const bwgame::unit_t &)>' has been explicitly marked deprecated here
+   25 | struct _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_NO_SPECIALIZATIONS result_of;
+      |        ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:725:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  725 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:\Users\82103\Downloads\test2.396t\emsdk-main\upstream\emscripten\cache\sysroot/include/c++/v1\__config:698:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  698 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+30 warnings generated.
+em++: warning: `main` is defined in the input files, but `_main` is not in `EXPORTED_FUNCTIONS`. Add it to this list if you want `main` to run. [-Wunused-main]

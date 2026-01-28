@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarCraft Clone - HTML Version</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="info-panel">
+            <h2>StarCraft Clone</h2>
+            <div id="stats">
+                <p>선택된 유닛: <span id="selected-count">0</span></p>
+                <p>아군: <span id="ally-count">15</span></p>
+                <p>적군: <span id="enemy-count">2</span></p>
+                <p>FPS: <span id="fps">60</span></p>
+            </div>
+            <div id="controls">
+                <h3>조작법</h3>
+                <ul>
+                    <li>좌클릭: 유닛 선택</li>
+                    <li>드래그: 다중 선택</li>
+                    <li>우클릭: 이동/공격</li>
+                    <li>A + 클릭: 강제 공격</li>
+                    <li>S: 정지</li>
+                    <li>H: 홀드</li>
+                </ul>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="1200" height="800"></canvas>
+    </div>
+
+    <script src="data/units.js"></script>
+    <script src="pathfinding.js"></script>
+    <script src="collision.js"></script>
+    <script src="combat.js"></script>
+    <script src="unit.js"></script>
+    <script src="selection.js"></script>
+    <script src="commands.js"></script>
+    <script src="renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

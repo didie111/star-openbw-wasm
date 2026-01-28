@@ -1,0 +1,226 @@
+=== OpenBW 완전 플레이 가능 게임 ===
+게임 플레이어 초기화 중...
+프로토스 아이콘 로드 중...
+=== 프로토스 아이콘 로드 시작 ===
+스타크래프트 팔레트 로드 성공 (256색)
+경로 시도: images/protoss_icons.png
+✓ 프로토스 아이콘 로드 성공: images/protoss_icons.png
+이미지 크기: 406x157
+이미지 포맷: BPP=24, Rmask=0x000000FF, Gmask=0x0000FF00, Bmask=0x00FF0000, Amask=0x00000000
+프로토스 아이콘 로드 완료! (RGBA, 63742 픽셀)
+Armor 툴팁 로드 중...
+=== Armor 툴팁 이미지 로드 시작 ===
+경로 시도: images/p armor 1-1.png
+✓ Armor 툴팁 로드 성공: images/p armor 1-1.png
+Armor 툴팁 크기: 243x83
+Armor 툴팁 로드 완료! (RGBA, 20169 픽셀)
+Shield 툴팁 로드 중...
+=== Shield 툴팁 이미지 로드 시작 ===
+경로 시도: images/p plasma shields 1 .png
+✓ Shield 툴팁 로드 성공: images/p plasma shields 1 .png
+Shield 툴팁 크기: 768x193
+Shield 툴팁 로드 완료! (RGBA, 148224 픽셀)
+맵 로딩 중...
+맵 로딩 성공!
+플레이어 설정 완료!
+UI 초기화 중...
+UI 초기화 성공!
+넥서스 생성 성공: (2072, 2646)
+프로브 생성 성공: (2280, 2620)
+프로브 생성 성공: (2320, 2620)
+프로브 생성 성공: (2360, 2620)
+프로브 생성 성공: (2400, 2620)
+해처리 생성 성공: (2983, 2523)
+[DRONE] 목표 기준점 base=(2983,2523)
+드론 생성 성공: (2903, 2643)
+드론 생성 성공: (2943, 2683)
+드론 생성 성공: (2983, 2723)
+드론 생성 성공: (3023, 2683)
+드론 생성 성공: (3063, 2643)
+드론 생성 성공: (2863, 2723)
+드론 생성 성공: (2903, 2763)
+드론 생성 성공: (2943, 2803)
+드론 생성 성공: (2983, 2843)
+드론 생성 성공: (3023, 2803)
+드론 생성 성공: (3063, 2763)
+드론 생성 성공: (3103, 2723)
+드론 생성 성공: (2823, 2763)
+드론 생성 성공: (2863, 2803)
+드론 생성 성공: (2903, 2843)
+드론 생성 성공: (2943, 2883)
+드론 생성 성공: (2983, 2923)
+드론 생성 성공: (3023, 2883)
+드론 생성 성공: (3063, 2843)
+드론 생성 성공: (3103, 2803)
+[DRONE] 최종 생성 수: 20
+
+=== 게임 시작! ===
+조작법:
+  좌클릭: 유닛 선택
+  우클릭: 이동/공격
+  드래그: 다중 선택
+  A + 클릭: 강제 공격
+  M + 클릭: 이동
+  P + 클릭: 정찰
+  S: 정지
+  H: 홀드
+  1-9: 컨트롤 그룹
+  ESC: 종료
+
+[UI_CAT] no selection, category=0
+Frame 100 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=121, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 200 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=242, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 300 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=363, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 400 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=484, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 500 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 600 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=605, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 700 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=725, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 800 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=845, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 900 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=966, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 1000 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=1087, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 1100 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+Frame 1200 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=1207, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 1300 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=1328, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 1400 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=1449, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 1500 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=1569, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 1600 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=1690, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 1700 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 1800 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=1811, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 1900 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=1932, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 2000 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=2052, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 2100 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=2173, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 2200 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=2293, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 2300 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 2400 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=2414, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 2500 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=2535, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 2600 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=2655, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 2700 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=2776, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 2800 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=2896, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 2900 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+Frame 3000 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=3017, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 3100 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=3138, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 3200 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=3259, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 3300 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=3380, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 3400 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 3500 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=3500, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 3600 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=3620, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 3700 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=3741, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 3800 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=3862, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 3900 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=3982, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 4000 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+Frame 4100 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=4102, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 4200 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=4223, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 4300 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=4343, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 4400 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=4464, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 4500 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=4584, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 4600 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 4700 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=4704, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 4800 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=4825, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 4900 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=4945, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 5000 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+[DEBUG_1SEC] frame=5066, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 5100 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=5186, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+Frame 5200 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 5300 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[DEBUG_1SEC] frame=5307, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(833,333), is_ui=0, selected=0, cmd_mode=0
+[UI_SYNC] g_ui_selected_category=0, g_ui_active_button=1, rally_active=0
+Frame 5400 - Minerals: 5000, Selected: 0 (유닛:0, 건물:0, 자원:0)
+[RING_STATE] target_rings=0, command_ring_frames=0
+[DEBUG_1SEC] frame=5427, left_btn=0, is_drag=0, screen_pos=(1432,2246), mouse=(878,765), is_ui=1, selected=0, cmd_mode=0

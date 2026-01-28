@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenBW Web Port</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="panel">
+        <div class="title">OpenBW Web Port</div>
+        <div class="subtitle">MPQ를 업로드한 뒤 실행하세요. 브라우저는 PC의 설치 경로를 직접 읽을 수 없습니다.</div>
+
+        <div class="row">
+          <label class="label" for="mpqPatch">Patch_rt.mpq</label>
+          <input id="mpqPatch" type="file" accept=".mpq" />
+        </div>
+        <div class="row">
+          <label class="label" for="mpqBroo">BrooDat.mpq</label>
+          <input id="mpqBroo" type="file" accept=".mpq" />
+        </div>
+        <div class="row">
+          <label class="label" for="mpqStar">StarDat.mpq</label>
+          <input id="mpqStar" type="file" accept=".mpq" />
+        </div>
+
+        <div class="row">
+          <label class="label" for="mapFile">맵(.scm/.scx)</label>
+          <input id="mapFile" type="file" accept=".scm,.scx" />
+        </div>
+
+        <div class="row">
+          <button id="btnMount" class="btn" disabled>MPQ 마운트</button>
+          <button id="btnStart" class="btn primary" disabled>게임 시작</button>
+        </div>
+
+        <div class="row">
+          <div id="status" class="status">WASM 로딩 대기중...</div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <canvas id="canvas" class="canvas" width="1280" height="800"></canvas>
+      </div>
+    </div>
+
+    <script>
+      window.Module = {
+        canvas: (() => document.getElementById('canvas'))(),
+        print: (t) => window.__openbw_log(String(t)),
+        printErr: (t) => window.__openbw_log(String(t)),
+      };
+    </script>
+    <script src="./app.js"></script>
+    <script src="./openbw.js"></script>
+  </body>
+</html>
